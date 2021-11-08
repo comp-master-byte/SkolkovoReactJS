@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import logo from '../images/logo.png'
+import {Images} from './Images'
 import { motion } from 'framer-motion'
 import { Links } from './Links'
 
@@ -25,14 +25,12 @@ export const Navigation = () => {
 
     }, [])
 
-
     return (
         <header className="header">
             <div className="container">
                 <div className="header-content">
                     <div className="header-content--logo">
-                        <img src={logo} alt="" />
-                        <em>Asoka</em>
+                        <img src={Images[0].image} alt="" />
                     </div>
                     <nav className="header-content--navigation">
                         {Links.map(item => {

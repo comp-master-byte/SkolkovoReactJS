@@ -22,14 +22,22 @@ export const Introduction = () => {
                         <motion.div 
                             className="circle circle-1"
                             style={{cursor: 'pointer'}}
+                            drag
+                            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                         >
                             <h2>3318</h2>
                             <p>Servers</p>
                         </motion.div>
-                        <div className="circle circle-2">
+                        <motion.div 
+                            className="circle circle-2"
+                            drag
+                            dragConstraints={{ left: 0, right: 50, top: 0, bottom: 0 }}
+                            dragElastic={0.2}
+                            style={{cursor: 'pointer'}}
+                        >
                             <h2>62</h2>
                             <p>Countries</p>
-                        </div>
+                        </motion.div>
                         <div className="circle circle-3">
                             <p>Up to</p>
                             <h2>1000Mbps</h2>

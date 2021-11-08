@@ -26,7 +26,7 @@ body {
 .header {
     width: 100%;
     height: 100px;
-    padding-top: 10px;
+    padding-top: 20px;
 
     &-content {
         display: flex;
@@ -36,11 +36,13 @@ body {
         height: 100%;
 
         &--logo{
-            display: flex;
-            align-items: center;
-
+            transition: 1s;
+            &:hover {
+                transform: rotate(360deg);
+            }   
             img {
-                transform: rotate(180deg);
+                width: 200px;
+                cursor: pointer;
             }
 
             em {
