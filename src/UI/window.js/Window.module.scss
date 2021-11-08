@@ -1,0 +1,22 @@
+.window {
+    width: 760px;
+    height: 184px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 32px;
+    border: 2px solid rgba(239, 57, 89, 0.4);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.windowContent {
+    line-height: 3;
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #0D224E;
+    }
+    img {
+        margin-left: 35px;
+    }
+}
