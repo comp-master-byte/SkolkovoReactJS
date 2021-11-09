@@ -15,7 +15,7 @@ export const Team = () => {
                     <h2 data-aos="zoom-in">Создатели проекта Asoka</h2>
                     <Card data-aos="zoom-in-down"/>
                     <div style={{textAlign: 'right', width: '100%', marginTop: 40}}>
-                        <strong >"Данный сайт - ручная работа, с ноткой харизмы и чувства стиля" - 
+                        <strong >"Данный сайт - ручная работа, с ноткой харизмы и чувством стиля" - 
                             Team Lead проекта Asoka и React JS программист, Акопьян Карэн
                         </strong>
                     </div>

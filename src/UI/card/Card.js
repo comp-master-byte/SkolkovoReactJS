@@ -14,10 +14,10 @@ export const Card = ({props}) => {
                 <div data-aos="zoom-in-right" className={styles.card}>
                     <div className={styles.content}>
                         <div className={styles.imgBx}>
-                            <img  src={Images[1].image} alt="" />
+                            <img src={Images[3].image} alt="" />
                         </div>
                         <div className={styles.contentBx}>
-                            <h3>someone famous <br /> <span>Creative Designer</span> </h3>
+                            <h3>Аль-Алуш Ибрагим<br /> <span>Трейдер, спикер</span> </h3>
                         </div>
                     </div>
                     <ul className={styles.list}>
@@ -33,7 +33,7 @@ export const Card = ({props}) => {
                             <img src={Images[1].image} alt="" />
                         </div>
                         <div className={styles.contentBx}>
-                            <h3>someone famous <br /> <span>Creative Designer</span> </h3>
+                            <h3>Акопьян Карэн <br /> <span>CEO-проекта, программист</span> </h3>
                         </div>
                     </div>
                     <ul className={styles.list}>
@@ -46,10 +46,10 @@ export const Card = ({props}) => {
                 <div data-aos="zoom-in-left" className={styles.card}>
                     <div className={styles.content}>
                         <div className={styles.imgBx}>
-                            <img src={Images[1].image} alt="" />
+                            <img src={Images[4].image} alt="" />
                         </div>
                         <div className={styles.contentBx}>
-                            <h3>someone famous <br /> <span>Creative Designer</span> </h3>
+                            <h3>Штанденко Илья <br /> <span>Дизайнер, маркетолог</span> </h3>
                         </div>
                     </div>
                     <ul className={styles.list}>

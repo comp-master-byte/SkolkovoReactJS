@@ -9,6 +9,10 @@ import "aos/dist/aos.css"
 
 export const Informative = () => {
 
+    function stopRef(e) {
+        e.preventDefault()
+    }
+
     useEffect(() => {
         Aos.init({duration:1000})
     }, [])
@@ -21,20 +25,22 @@ export const Informative = () => {
                 </div>
                 <div  className="infoPage-application">
                     <div data-aos="fade-right" className="infoPage-application--text">
-                        <h2>Try it free</h2>
-                        <p>One package - four tools to protect yourself. From your devices to online presence. Order free 7-day trial for your laptop</p>
+                        <h2>Бесплатно!</h2>
+                        <p>Полный личный кабинет учащегося: расписание, домашние задания, успеваемость, онлайн-занятия, чаты
+                            с группами и общение с преподавателями, вся информация об успеваемости и рейтинг.
+                        </p>
                     </div>
                     <form 
                         data-aos="fade-left" 
                         className="infoPage-application--form">
-                        <h2>Submit your application</h2>
+                        <h2>Важные новости в сфере образования</h2>
                         <TextField 
                             style={{marginTop:20, width:'334px', fontSize:30, marginBottom:'50px'}}
                             id="standard-basic" 
                             label="E-mail" 
                             variant="standard" 
                         /> 
-                        <MyButton>Try it now</MyButton>
+                        <MyButton onClick={stopRef}>Подписаться</MyButton>
                     </form>
                 </div>
                 
@@ -46,12 +52,12 @@ export const Informative = () => {
                         data-aos="fade-up-right" 
                         className="item-circle item-circle-1"
                     >
-                        choose the plan
+                        Обзор
                     </motion.div>
                     <motion.div 
                         whileHover={{cursor: 'pointer'}}
                         data-aos="fade-up-left" className="item-circle item-circle-2">
-                        Ask a Question
+                        Форум
                     </motion.div>
                 </div>
             </div>

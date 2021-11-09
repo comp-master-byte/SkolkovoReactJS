@@ -4,14 +4,12 @@ import { motion } from 'framer-motion'
 
 export const MyButton = ({children, ...props}) => {
 
-    function stopRef(e) {
-        e.preventDefault()
-    }
+    
 
     return (
         <motion.button 
             {...props}
-            onClick={stopRef}
+            // onClick={stopRef}
             className={styles.MyBtn}
             whileHover={{
                 scale: 1.095,

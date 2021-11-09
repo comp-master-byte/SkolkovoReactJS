@@ -6,13 +6,14 @@ export const Text = () => {
     return (
         <div className={styles.wrapper} style={{marginTop: 80, marginBottom: 80}}>
             <div className={styles.staticTxt}>
-                I'm a 
+                Я
             </div>
             <ul className={styles.dynamicTxt}> 
-                <li><span>YouTuber</span></li>
-                <li><span>Designer</span></li>
-                <li><span>Developer</span></li>
-                <li><span>Freelancer</span></li>
+                <li><span>Студент</span></li>
+                <li><span>Школьник</span></li>
+                <li><span>Родитель</span></li>
+                <li><span>Конкурент</span></li>
+                {/* <li><span>Преподаватель</span></li> */}
             </ul>
         </div>
     )

@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from './MyModal.module.scss'
+import './MyModal.scss'
 
-export const MyModal = ({active, setActive}) => {
+export const MyModal = ({active, setActive, children}) => {
     return (
-        <div className={styles.myModal} onClick={() => setActive(false)}>
-            <div className={styles.myModalContent} onClick={e => e.stopPropagation()}>
-                
+        <div className={active ? "myModal active" : "myModal"} onClick={() => setActive(false)}>
+            <div className={active ? "myModalContent active" : "myModalContent"} onClick={e => e.stopPropagation()}>
+                {children}
             </div>
         </div>
     )

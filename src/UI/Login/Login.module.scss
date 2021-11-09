@@ -1,0 +1,16 @@
+.login {
+    max-width: 20vw;
+    margin: 0 auto;
+}
+
+.loginContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginContent h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #0D224E;
+}

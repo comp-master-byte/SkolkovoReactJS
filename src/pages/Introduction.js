@@ -4,10 +4,15 @@ import { motion } from 'framer-motion'
 import Aos from 'aos'
 import 'aos/dist/aos'
 import { MyModal } from '../UI/Modal/MyModal'
+import { Login } from '../UI/Login/Login'
 
 export const Introduction = () => {
 
-    const [modalActive, setModalActive] = useState(true)
+    const [modalActive, setModalActive] = useState(false)
+
+    function modalClick() {
+        setModalActive(prev => !prev)
+    }
 
     useEffect(() => {
         Aos.init()
@@ -25,10 +30,13 @@ export const Introduction = () => {
                         animate={{opacity:1, x: 0}}
                         transition={{duration: 1.5}}
                     >
-                        <h2>Take back your privacy </h2>
-                        <p>Security, reliability and speed — on every device, anywhere you go.</p>
-                        <MyButton>Get it now</MyButton>
-                        {/* <MyModal active={modalActive} setActive={setModalActive}/> */}
+                        <h2>Единая образовательная среда России</h2>
+                        <p>Удобно, актуально, быстро - вся информация в один клик</p>
+                        <MyModal active={modalActive} setActive={setModalActive}>
+                            <Login>
+                            </Login>
+                        </MyModal>
+                        <MyButton onClick={modalClick} >Личный кабинет</MyButton>
                     </motion.div>
 
                     <div className="introduction-content--circles">
@@ -41,8 +49,8 @@ export const Introduction = () => {
                             transition={{duration: 1.5}}
                             animate={{opacity:1, y: 0}}
                         >
-                            <h2>3318</h2>
-                            <p>Servers</p>
+                            <h2>Все образовательные</h2>
+                            <p>Учреждения</p>
                         </motion.div>
                         <motion.div 
                             className="circle circle-2"
@@ -54,8 +62,7 @@ export const Introduction = () => {
                             animate={{opacity:1, x: 0}}
                             transition={{duration: 1.5}}
                         >
-                            <h2>62</h2>
-                            <p>Countries</p>
+                            <h2>ОТЗЫВЫ</h2>
                         </motion.div>
                         <motion.div 
                             className="circle circle-3"
@@ -65,10 +72,8 @@ export const Introduction = () => {
                             initial={{opacity: 0, x: 100}}
                             animate={{opacity:1, x: 0}}
                             transition={{duration: 1.5}}
-                        >
-                            <p>Up to</p>
-                            <h2>1000Mbps</h2>
-                            <p>bandwidth</p>
+                        >   <p>Доступные</p>
+                            <h2>Видеоконференции</h2>
                         </motion.div>
                         <motion.div 
                             className="circle circle-4"
@@ -79,7 +84,7 @@ export const Introduction = () => {
                             animate={{opacity:1, y: 0}}
                             transition={{duration: 1.5}}
                         >
-                            <p>30-day money-back guarantee</p>
+                            <p>РАСПИСАНИЕ</p>
                         </motion.div>
                     </div>
                 </div>
