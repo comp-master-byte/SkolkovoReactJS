@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './MyButton.module.scss'
 import { motion } from 'framer-motion'
 
-export const MyButton = ({children}) => {
+export const MyButton = ({children, ...props}) => {
 
     function stopRef(e) {
         e.preventDefault()
@@ -10,6 +10,7 @@ export const MyButton = ({children}) => {
 
     return (
         <motion.button 
+            {...props}
             onClick={stopRef}
             className={styles.MyBtn}
             whileHover={{

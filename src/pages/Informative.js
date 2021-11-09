@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Window } from '../UI/window.js/Window'
 import TextField from '@mui/material/TextField'
 import { MyButton } from '../UI/button/MyButton'
+import { motion } from 'framer-motion'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
@@ -35,6 +36,23 @@ export const Informative = () => {
                         /> 
                         <MyButton>Try it now</MyButton>
                     </form>
+                </div>
+                
+                <div className="infoPage-plan">
+                    <motion.div 
+                        whileHover={{cursor: 'pointer'}}
+                        drag
+                        dragConstraints={{top:0, left:0, bottom:0, right: 0}}
+                        data-aos="fade-up-right" 
+                        className="item-circle item-circle-1"
+                    >
+                        choose the plan
+                    </motion.div>
+                    <motion.div 
+                        whileHover={{cursor: 'pointer'}}
+                        data-aos="fade-up-left" className="item-circle item-circle-2">
+                        Ask a Question
+                    </motion.div>
                 </div>
             </div>
         </div>

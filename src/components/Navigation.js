@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import {Images} from './Images'
 import { motion } from 'framer-motion'
 import { Links } from './Links'
+import { Opacity } from '@mui/icons-material'
+import { duration } from '@mui/material'
 
 export const Navigation = () => {
 
@@ -16,19 +18,38 @@ export const Navigation = () => {
     useEffect(() => {
 
         const refScroll2 = document.querySelector('.link2')
+        const refScroll3 = document.querySelector('.link3')
+        const refScroll4 = document.querySelector('.link4')
 
         const secondPage = document.querySelector('.infoPage')
+        const thirdPage = document.querySelector('.reviews')
+        const fourthPage = document.querySelector('.team')
 
         refScroll2.addEventListener('click', function() {
             scrollTo(secondPage)
         })
 
+        refScroll3.addEventListener('click', function() {
+            scrollTo(thirdPage)
+        })
+
+        refScroll4.addEventListener('click', function() {
+            scrollTo(fourthPage)
+        })
+
     }, [])
 
     return (
-        <header className="header">
+        <header 
+            className="header"
+        >
             <div className="container">
-                <div className="header-content">
+                <motion.div 
+                    className="header-content"
+                    initial={{opacity: 0, y: -100}}
+                    animate={{opacity:1, y: 0}}
+                    transition={{duration: 1.5}}
+                >
                     <div className="header-content--logo">
                         <img src={Images[0].image} alt="" />
                     </div>
@@ -47,7 +68,7 @@ export const Navigation = () => {
                             )
                         })}
                     </nav>
-                </div>
+                </motion.div>
             </div>
         </header>
     )
