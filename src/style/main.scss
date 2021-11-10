@@ -350,13 +350,14 @@ body {
         color: #0D224E;
 
         h2{
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 500;
             margin-bottom: 5px;
         }
         p{
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 400;
+            line-height: 1.5;
         }
     }
 
@@ -366,7 +367,7 @@ body {
         display: flex;
         justify-content: space-evenly;
         div{
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400;
             color: #4A86FF;
             max-width: 30%;
