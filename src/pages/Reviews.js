@@ -100,26 +100,26 @@ export const Reviews = () => {
                         <div>
                             <div className="reviews-content--slider">
                                 <div data-aos="fade-right"  className="reviews-content--slider__text">
-                                    <h2>Reviews</h2>
-                                    <p>We currently have satisfied customers in the US, Canada, the UK, Germany, France, Italy, Spain, Belgium, Austria, Switzerland, Malaysia, New Zealand, and other 52 countries.</p>
+                                    <h2>Краткий обзор</h2>
+                                    <p>На данный момент мы хотим взорвать рынок России, чтобы каждое учебное заведение РФ использовало нашу платформу во время дистанционного обучение, так как нет схожих Российских систем связи. Справа комментарии опрошенных людей</p>
                                 </div>
                                 <div data-aos="fade-left" className="reviews-content--slider__comment">
-                                    <div>“ShadowHand proves its worth with a large collection of privacy tools, an excellent app, and unlimited device connections”
+                                    <div>“Наконец-то, кто-то решился создать нормальную платформу для обучение! А то честно говоря надоел этот Zoom, программа максимально не подходит для связи во время онлайн-обучения”
                                     </div>
-                                    <div>“ShadowHand proves its worth with a large collection of privacy tools, an excellent app, and unlimited device connections”</div>
+                                    <div>“Ребят, мы верим в вас! Ваш проект может переврнуть всё понятие о связи и контакте во время дистанционного обучения. Сейчас хотя бы Discord спасает, но все равно это не то, ведь я на нём общаюсь с геймерами, а через час например с преподавателем”</div>
                                 </div>
                             </div>  
                         </div>
                         <div>
                             <div className="reviews-content--slider">
                                 <div className="reviews-content--slider__text">
-                                    <h2>Reviews</h2>
-                                    <p>We currently have satisfied customers in the US, Canada, the UK, Germany, France, Italy, Spain, Belgium, Austria, Switzerland, Malaysia, New Zealand, and other 52 countries.</p>
+                                    <h2>Краткий обзор</h2>
+                                    <p>На данный момент мы хотим взорвать рынок России, чтобы каждое учебное заведение РФ использовало нашу платформу во время дистанционного обучение, так как нет схожих Российских систем связи. Справа комментарии опрошенных людей</p>
                                 </div>
                                 <div className="reviews-content--slider__comment">
-                                    <div>“ShadowHand proves its worth with a large collection of privacy tools, an excellent app, and unlimited device connections”
+                                    <div>“Наконец-то, кто-то решился создать нормальную платформу для обучение! А то честно говоря надоел этот Zoom, программа максимально не подходит для связи во время онлайн-обучения”
                                     </div>
-                                    <div>“ShadowHand proves its worth with a large collection of privacy tools, an excellent app, and unlimited device connections”</div>
+                                    <div>“Ребят, мы верим в вас! Ваш проект может переврнуть всё понятие о связи и контакте во время дистанционного обучения. Сейчас хотя бы Discord спасает, но все равно это не то, ведь я на нём общаюсь с геймерами, а через час например с преподавателем”</div>
                                 </div>
                             </div>  
                         </div>
