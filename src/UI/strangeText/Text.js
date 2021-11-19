@@ -12,7 +12,7 @@ export const Text = () => {
                 <li><span>Студент</span></li>
                 <li><span>Школьник</span></li>
                 <li><span>Родитель</span></li>
-                <li><span>Конкурент</span></li>
+                <li><span>Человек</span></li>
                 {/* <li><span>Преподаватель</span></li> */}
             </ul>
         </div>

@@ -1,5 +1,6 @@
 .wrapper {
     display: inline-flex;
+    align-items: center;
 
     .staticTxt {
         color: #000;
@@ -51,3 +52,25 @@
         margin: 0 -35px 0 35px;
     }
 }
+
+@media (max-width: 600px) {
+    div.wrapper {
+        margin-top: 120px !important;
+        margin-bottom: 0 !important;
+        display: block;
+        div.staticTxt{
+            font-size: 30px;
+        }
+    }
+    ul.dynamicTxt {
+        li span {
+            font-size: 30px;
+        }
+    }
+    @keyframes slide {
+        100% {
+            top: -420px;
+        }
+    }
+}
+

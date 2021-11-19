@@ -30,17 +30,18 @@ export const Informative = () => {
                             с группами и общение с преподавателями, вся информация об успеваемости и рейтинг.
                         </p>
                     </div>
-                    <form 
-                        data-aos="fade-left" 
+                    <form
+                        data-aos="zoom-in"
                         className="infoPage-application--form">
                         <h2>Важные новости в сфере образования</h2>
                         <TextField 
                             style={{marginTop:20, width:'334px', fontSize:30, marginBottom:'50px'}}
                             id="standard-basic" 
+                            className="input"
                             label="E-mail" 
                             variant="standard" 
                         /> 
-                        <MyButton onClick={stopRef}>Подписаться</MyButton>
+                        <MyButton className="btn-sub" onClick={stopRef}>Подписаться</MyButton>
                     </form>
                 </div>
                 

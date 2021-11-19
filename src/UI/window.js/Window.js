@@ -7,7 +7,7 @@ export const Window = () => {
         <div className={styles.window}>
             <div className={styles.windowContent}>
                 <p>Подключайтесь с любого источника</p>
-                <div>
+                <div className={styles.flex}>
                     {Icons.map(icon => {
                         return <img className={styles.windowIcons} src={icon.icon} alt="" />
                     })}

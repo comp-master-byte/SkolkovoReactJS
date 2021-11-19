@@ -15,6 +15,14 @@ export const Navigation = () => {
         })
     }
 
+    function showList() {
+        document.querySelector('.header-content--navigation').classList.toggle('show')
+    }
+
+    function removeList() {
+        document.querySelector('.header-content--navigation').classList.remove('show')
+    }
+
     useEffect(() => {
 
         const refScroll2 = document.querySelector('.link2')
@@ -53,6 +61,11 @@ export const Navigation = () => {
                     <div className="header-content--logo">
                         <img src={Images[0].image} alt="" />
                     </div>
+                    <div className="burger" onClick={showList}>
+                        <div className="burger-line"></div>
+                        <div className="burger-line"></div>
+                        <div className="burger-line"></div>
+                    </div>
                     <nav className="header-content--navigation">
                         {Links.map(item => {
                             return (
@@ -63,7 +76,7 @@ export const Navigation = () => {
                                     }}
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <a className={item.className} href="#">{item.link}</a>
+                                    <a onClick={removeList} className={item.className} href="#">{item.link}</a>
                                 </motion.li>
                             )
                         })}
