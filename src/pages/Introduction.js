@@ -20,8 +20,8 @@ export const Introduction = () => {
 
     return (
         <div className="introduction">
-            {/* <div className="blur-circle-1"></div>
-            <div className="blur-circle-2"></div> */}
+            <div className="blur-circle-1"></div>
+            <div className="blur-circle-2"></div>
             <div className="container">
                 <div className="introduction-content">
                     <motion.div 
